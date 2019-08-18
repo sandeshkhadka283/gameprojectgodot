@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://door.png" type="Texture" id=1]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 6.91867, 16.1865 )
+
+[node name="door" type="Node"]
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 44.2106, 56.8422 )
+texture = ExtResource( 1 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 96, 64, 32, 32 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Sprite"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite/StaticBody2D"]
+position = Vector2( 12.0456, 16.6785 )
+shape = SubResource( 1 )

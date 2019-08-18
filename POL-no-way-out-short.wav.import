@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/POL-no-way-out-short.wav-7cb252da674f6e4b7721548df0b98f5d.sample"
+
+[deps]
+
+source_file="res://POL-no-way-out-short.wav"
+dest_files=[ "res://.import/POL-no-way-out-short.wav-7cb252da674f6e4b7721548df0b98f5d.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

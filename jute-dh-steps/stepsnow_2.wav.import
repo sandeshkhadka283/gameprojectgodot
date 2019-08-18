@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/stepsnow_2.wav-991c7c5a5ae5c66ad1923b3aba37ab6f.sample"
+
+[deps]
+
+source_file="res://jute-dh-steps/stepsnow_2.wav"
+dest_files=[ "res://.import/stepsnow_2.wav-991c7c5a5ae5c66ad1923b3aba37ab6f.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

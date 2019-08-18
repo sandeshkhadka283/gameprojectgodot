@@ -1,0 +1,68 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://jungle/tile_jungle_plants_objects.png" type="Texture" id=1]
+
+[node name="jungleplantts" type="Node2D"]
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 0, -5.57901 )
+texture = ExtResource( 1 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 0, 320, 192, 96 )
+
+[node name="Sprite2" type="Sprite" parent="."]
+position = Vector2( 237.108, 184.108 )
+texture = ExtResource( 1 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 256, 288, 64, 32 )
+
+[node name="Sprite3" type="Sprite" parent="."]
+position = Vector2( 119.949, 203.634 )
+texture = ExtResource( 1 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 256, 0, 64, 64 )
+
+[node name="Sprite4" type="Sprite" parent="."]
+position = Vector2( 16.7371, 214.792 )
+texture = ExtResource( 1 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 256, 64, 64, 64 )
+
+[node name="Sprite5" type="Sprite" parent="."]
+position = Vector2( 195.266, 114.37 )
+texture = ExtResource( 1 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 320, 64, 64, 64 )
+
+[node name="Sprite6" type="Sprite" parent="."]
+position = Vector2( 72.5273, 97.6329 )
+texture = ExtResource( 1 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 448, 128, 64, 96 )
+
+[node name="Sprite7" type="Sprite" parent="."]
+position = Vector2( -5.57898, 114.37 )
+texture = ExtResource( 1 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 192, 64, 64, 64 )
+
+[node name="Sprite8" type="Sprite" parent="."]
+position = Vector2( 225.95, 44.6322 )
+texture = ExtResource( 1 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 448, 288, 64, 64 )
+
+[node name="Sprite9" type="Sprite" parent="."]
+position = Vector2( 251.056, -2.78949 )
+texture = ExtResource( 1 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 256, 224, 64, 32 )

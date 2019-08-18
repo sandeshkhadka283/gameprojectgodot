@@ -1,0 +1,119 @@
+[gd_scene load_steps=55 format=2]
+
+[ext_resource path="res://player.gd" type="Script" id=1]
+[ext_resource path="res://freeknight/png/Idle (1).png" type="Texture" id=2]
+[ext_resource path="res://freeknight/png/Idle (2).png" type="Texture" id=3]
+[ext_resource path="res://freeknight/png/Idle (3).png" type="Texture" id=4]
+[ext_resource path="res://freeknight/png/Idle (5).png" type="Texture" id=5]
+[ext_resource path="res://freeknight/png/Idle (9).png" type="Texture" id=6]
+[ext_resource path="res://freeknight/png/Idle (4).png" type="Texture" id=7]
+[ext_resource path="res://freeknight/png/Idle (6).png" type="Texture" id=8]
+[ext_resource path="res://freeknight/png/Idle (7).png" type="Texture" id=9]
+[ext_resource path="res://freeknight/png/Idle (8).png" type="Texture" id=10]
+[ext_resource path="res://freeknight/png/Idle (10).png" type="Texture" id=11]
+[ext_resource path="res://freeknight/png/Run (1).png" type="Texture" id=12]
+[ext_resource path="res://freeknight/png/Run (2).png" type="Texture" id=13]
+[ext_resource path="res://freeknight/png/Run (3).png" type="Texture" id=14]
+[ext_resource path="res://freeknight/png/Run (4).png" type="Texture" id=15]
+[ext_resource path="res://freeknight/png/Run (9).png" type="Texture" id=16]
+[ext_resource path="res://freeknight/png/Run (5).png" type="Texture" id=17]
+[ext_resource path="res://freeknight/png/Run (6).png" type="Texture" id=18]
+[ext_resource path="res://freeknight/png/Run (7).png" type="Texture" id=19]
+[ext_resource path="res://freeknight/png/Run (8).png" type="Texture" id=20]
+[ext_resource path="res://freeknight/png/Run (10).png" type="Texture" id=21]
+[ext_resource path="res://freeknight/png/Jump (1).png" type="Texture" id=22]
+[ext_resource path="res://freeknight/png/Jump (3).png" type="Texture" id=23]
+[ext_resource path="res://freeknight/png/Jump (2).png" type="Texture" id=24]
+[ext_resource path="res://freeknight/png/Jump (5).png" type="Texture" id=25]
+[ext_resource path="res://freeknight/png/Jump (4).png" type="Texture" id=26]
+[ext_resource path="res://freeknight/png/Jump (6).png" type="Texture" id=27]
+[ext_resource path="res://freeknight/png/Jump (9).png" type="Texture" id=28]
+[ext_resource path="res://freeknight/png/Jump (8).png" type="Texture" id=29]
+[ext_resource path="res://freeknight/png/Jump (7).png" type="Texture" id=30]
+[ext_resource path="res://freeknight/png/Jump (10).png" type="Texture" id=31]
+[ext_resource path="res://freeknight/png/Dead (1).png" type="Texture" id=32]
+[ext_resource path="res://freeknight/png/Dead (2).png" type="Texture" id=33]
+[ext_resource path="res://freeknight/png/Dead (3).png" type="Texture" id=34]
+[ext_resource path="res://freeknight/png/Dead (4).png" type="Texture" id=35]
+[ext_resource path="res://freeknight/png/Dead (9).png" type="Texture" id=36]
+[ext_resource path="res://freeknight/png/Dead (5).png" type="Texture" id=37]
+[ext_resource path="res://freeknight/png/Dead (6).png" type="Texture" id=38]
+[ext_resource path="res://freeknight/png/Dead (7).png" type="Texture" id=39]
+[ext_resource path="res://freeknight/png/Dead (8).png" type="Texture" id=40]
+[ext_resource path="res://freeknight/png/Dead (10).png" type="Texture" id=41]
+[ext_resource path="res://freeknight/png/Attack (1).png" type="Texture" id=42]
+[ext_resource path="res://freeknight/png/Attack (2).png" type="Texture" id=43]
+[ext_resource path="res://freeknight/png/Attack (4).png" type="Texture" id=44]
+[ext_resource path="res://freeknight/png/Attack (5).png" type="Texture" id=45]
+[ext_resource path="res://freeknight/png/Attack (10).png" type="Texture" id=46]
+[ext_resource path="res://freeknight/png/Attack (9).png" type="Texture" id=47]
+[ext_resource path="res://freeknight/png/Attack (3).png" type="Texture" id=48]
+[ext_resource path="res://freeknight/png/Attack (6).png" type="Texture" id=49]
+[ext_resource path="res://freeknight/png/Attack (7).png" type="Texture" id=50]
+[ext_resource path="res://freeknight/png/Attack (8).png" type="Texture" id=51]
+[ext_resource path="res://jute-dh-steps/stepdirt_1.wav" type="AudioStream" id=52]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 11 ) ],
+"loop": true,
+"name": "idle",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 12 ), ExtResource( 13 ), ExtResource( 14 ), ExtResource( 15 ), ExtResource( 16 ), ExtResource( 17 ), ExtResource( 18 ), ExtResource( 19 ), ExtResource( 20 ), ExtResource( 21 ) ],
+"loop": true,
+"name": "run",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 22 ), ExtResource( 23 ), ExtResource( 24 ), ExtResource( 25 ), ExtResource( 26 ), ExtResource( 27 ), ExtResource( 28 ), ExtResource( 29 ), ExtResource( 30 ), ExtResource( 31 ) ],
+"loop": true,
+"name": "jump",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 32 ), ExtResource( 33 ), ExtResource( 34 ), ExtResource( 35 ), ExtResource( 36 ), ExtResource( 37 ), ExtResource( 38 ), ExtResource( 39 ), ExtResource( 40 ), ExtResource( 41 ) ],
+"loop": true,
+"name": "dead",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 42 ), ExtResource( 43 ), ExtResource( 44 ), ExtResource( 45 ), ExtResource( 46 ), ExtResource( 47 ), ExtResource( 48 ), ExtResource( 49 ), ExtResource( 50 ), ExtResource( 51 ) ],
+"loop": true,
+"name": "attack",
+"speed": 5.0
+} ]
+
+[sub_resource type="CapsuleShape2D" id=2]
+radius = 17.1911
+height = 14.4483
+
+[node name="player" type="KinematicBody2D"]
+position = Vector2( 15.4864, 7.56204 )
+script = ExtResource( 1 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+position = Vector2( 426.122, 354.98 )
+scale = Vector2( 0.1, 0.1 )
+frames = SubResource( 1 )
+animation = "run"
+frame = 3
+speed_scale = 2.0
+playing = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 424.084, 357.758 )
+rotation = 0.226893
+scale = Vector2( 1.1, 1.1 )
+shape = SubResource( 2 )
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2( 493.854, 363.402 )
+current = true
+zoom = Vector2( 1.2, 1.2 )
+smoothing_enabled = true
+editor_draw_drag_margin = true
+
+[node name="Node2D" type="Node2D" parent="."]
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Node2D"]
+stream = ExtResource( 52 )
+volume_db = 4.782
+autoplay = true

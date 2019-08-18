@@ -1,0 +1,98 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://startmenu.gd" type="Script" id=1]
+[ext_resource path="res://2482e8c7-5a42-460e-8d92-27ff5902a554_200x200 (1).png" type="Texture" id=2]
+[ext_resource path="res://button/Newgamebutton.tscn" type="PackedScene" id=3]
+[ext_resource path="res://button/quitbutton.tscn" type="PackedScene" id=4]
+[ext_resource path="res://templerun (1)/Slide__008.png" type="Texture" id=5]
+[ext_resource path="res://freeknight/png/Run (4).png" type="Texture" id=6]
+[ext_resource path="res://POL-no-way-out-short.wav" type="AudioStream" id=7]
+
+[node name="titlescreen" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+
+[node name="menu" type="VBoxContainer" parent="."]
+margin_left = 120.0
+margin_top = 34.0
+margin_right = 938.0
+margin_bottom = 573.0
+custom_constants/separation = 25
+
+[node name="logo" type="TextureRect" parent="menu"]
+margin_right = 818.0
+margin_bottom = 200.0
+texture = ExtResource( 2 )
+stretch_mode = 4
+
+[node name="centerRow" type="HBoxContainer" parent="menu"]
+margin_top = 225.0
+margin_right = 818.0
+margin_bottom = 369.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_constants/separation = 20
+
+[node name="Buttons" type="VBoxContainer" parent="menu/centerRow"]
+margin_right = 399.0
+margin_bottom = 144.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_constants/separation = 20
+alignment = 1
+
+[node name="Newgamebutton" parent="menu/centerRow/Buttons" instance=ExtResource( 3 )]
+margin_top = 2.0
+margin_right = 399.0
+margin_bottom = 62.0
+flat = false
+
+[node name="quitbutton" parent="menu/centerRow/Buttons" instance=ExtResource( 4 )]
+margin_top = 82.0
+margin_right = 399.0
+margin_bottom = 142.0
+flat = false
+
+[node name="CenterContainer" type="CenterContainer" parent="menu/centerRow"]
+margin_left = 419.0
+margin_right = 818.0
+margin_bottom = 144.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Sprite" type="Sprite" parent="menu/centerRow/CenterContainer"]
+position = Vector2( 115.741, 121.433 )
+scale = Vector2( 0.464686, 0.375344 )
+texture = ExtResource( 5 )
+
+[node name="Sprite2" type="Sprite" parent="menu/centerRow/CenterContainer"]
+position = Vector2( 311.172, 115.741 )
+scale = Vector2( 0.3406, 0.275395 )
+texture = ExtResource( 6 )
+
+[node name="Label" type="Label" parent="menu"]
+margin_top = 394.0
+margin_right = 818.0
+margin_bottom = 539.0
+size_flags_horizontal = 3
+size_flags_vertical = 7
+custom_colors/font_outline_modulate = Color( 0, 0, 0, 1 )
+text = "Copyright@2019
+ASCOL@Tham_Bdr_Pun
+ASCOL@Sandesh_Khadka
+ASCOL@Sagar_Subedi
+ASCOL@Roshan_Khadka
+ASCOL@Sarthak_Dahal
+version 1.7.9"
+align = 1
+valign = 1
+uppercase = true
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 7 )
+volume_db = 4.0
+autoplay = true
+max_distance = 2003.0
+[connection signal="pressed" from="menu/centerRow/Buttons/Newgamebutton" to="." method="_on_Newgamebutton_pressed"]
+[connection signal="pressed" from="menu/centerRow/Buttons/quitbutton" to="." method="_on_quitbutton_pressed"]
